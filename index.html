@@ -53,7 +53,32 @@
         <p>Создано с помощью GitHub</p>
         <p>Дата: <span id="current-date"></span></p>
     </footer>
+    <section>
+        <h2>Связаться со мной</h2>
+        <form id="contact-form">
+            <div>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
     
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо за сообщение! (Это демо-форма)');
+            this.reset();
+        });
+    </script>
     <script>
         document.getElementById('current-date').textContent = new Date().toLocaleDateString('ru-RU');
     </script>
