@@ -24,6 +24,12 @@
         .in-progress {
             color: orange;
         }
+        .feature-list {
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-left: 4px solid #0366d6;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -52,4 +58,8 @@
         document.getElementById('current-date').textContent = new Date().toLocaleDateString('ru-RU');
     </script>
 </body>
+    <div class="feature-list">
+        <h3>Планируемые улучшения:</h3>
+        <p>Следите за обновлениями в <a href="#">Issues</a></p>
+    </div>
 </html>
