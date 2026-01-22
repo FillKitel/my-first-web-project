@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый проект на GitHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .completed {
+            color: green;
+        }
+        .in-progress {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в мой проект!</h1>
+        <p>Этот проект создан для изучения GitHub через веб-интерфейс.</p>
+    </header>
+    
+    <section>
+        <h2>Мой прогресс:</h2>
+        <ul>
+            <li class="completed">✓ Создание репозитория</li>
+            <li class="completed">✓ Редактирование README.md</li>
+            <li class="in-progress">○ Создание HTML страницы</li>
+            <li>○ Работа с Issues</li>
+            <li>○ Создание Pull Request</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>Создано с помощью GitHub</p>
+        <p>Дата: <span id="current-date"></span></p>
+    </footer>
+    
+    <script>
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('ru-RU');
+    </script>
+</body>
+</html>
